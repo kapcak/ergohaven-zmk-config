@@ -19,6 +19,16 @@
             tapping-term-ms = <150>;
             hold-while-undecided;
         };
+
+        tball_mode: tball_mode {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TBALL_MODE";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -70,10 +80,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &mo 5   &mkp MB3  &mkp MB2  &mkp MB1  &mo 6                     &mo 6   &mkp MB1  &mkp MB2  &mkp MB3  &mo 5   &trans
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans           &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans           &trans
+&trans  &tball_mode 5 5  &mkp MB3  &mkp MB2  &mkp MB1  &mo 6                     &mo 6   &mkp MB1  &mkp MB2  &mkp MB3  &tball_mode 5 5  &trans
+&trans  &trans           &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans           &trans
+                         &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
 
             display-name = "Mouse";
