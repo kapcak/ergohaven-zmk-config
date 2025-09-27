@@ -54,26 +54,6 @@
             key-positions = <3 4>;
             layers = <0>;
         };
-
-        MB1 {
-            bindings = <&mkp MB1>;
-            key-positions = <16 15>;
-        };
-
-        MB2 {
-            bindings = <&mkp MB2>;
-            key-positions = <15 14>;
-        };
-
-        MB3 {
-            bindings = <&mkp MB3>;
-            key-positions = <16 14>;
-        };
-
-        scroll {
-            bindings = <&mo 7>;
-            key-positions = <16 15 14>;
-        };
     };
 
     macros {
