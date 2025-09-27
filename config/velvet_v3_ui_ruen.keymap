@@ -54,6 +54,11 @@
             key-positions = <3 4>;
             layers = <0>;
         };
+
+        mousebutton1 {
+            bindings = <&mkp MB1>;
+            key-positions = <16 15>;
+        };
     };
 
     macros {
