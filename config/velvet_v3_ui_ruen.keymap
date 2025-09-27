@@ -69,6 +69,11 @@
             bindings = <&mkp MB3>;
             key-positions = <16 14>;
         };
+
+        mousescroll {
+            bindings = <&mo 7>;
+            key-positions = <16 15 14>;
+        };
     };
 
     macros {
