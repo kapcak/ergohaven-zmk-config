@@ -84,7 +84,7 @@
         base {
             bindings = <
 &kp ESC               &kp Q  &kp W            &kp E         &kp R      &kp T                               &kp Y         &kp U  &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB               &kp A  &kp S            &kp D         &kp F      &kp G                               &kp H         &kp J  &kp K      &kp L     &kp SEMI  &kp FSLH
+&lt 7 TAB             &kp A  &kp S            &kp D         &kp F      &kp G                               &kp H         &kp J  &kp K      &kp L     &kp SEMI  &kp FSLH
 &tap_dance_shiftcaps  &kp Z  &kp X            &kp C         &kp V      &kp B                               &kp N         &kp M  &kp COMMA  &kp DOT   &kp SQT   &tap_dance_altgui
                              &tball_mode 6 5  &kp LEFT_GUI  &kp LCTRL  &lt 1 LC(N8)  &kp SPACE    &kp RET  &lt 2 LC(N9)  &none  &kp LBKT   &kp RBKT
             >;
@@ -158,15 +158,15 @@
             display-name = "Sniper";
         };
 
-        User0 {
+        numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp COLON  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp DOT    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp COMMA  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans           &trans           &trans
             >;
 
-            display-name = "User0";
+            display-name = "numpad";
         };
 
         User1 {
